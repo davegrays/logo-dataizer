@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "logo-dataizer",
+    "section": "",
+    "text": "Convert logos or icons into scatterplots of “datapoints”"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "logo-dataizer",
+    "section": "Install",
+    "text": "Install\npip install logo_dataizer"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "logo-dataizer",
+    "section": "How to use",
+    "text": "How to use\nhttps://davegrays.github.io/logo-dataizer/\ninitialize\n\nfrom logo_dataizer.scatterizer import Scatterizer\nscatterizer = Scatterizer()\n\nrun scatter() on any image type, just giving the filepath\n\nscatterizer.scatter(\"../data/cloud.png\")\n\n\n\n\n\n\n\nBy default, the output will be saved in the same location with “_scatterized” appended to the filename\nThe following settings can be modified (defaults are in the docstring)\n\nnumber of points to generate\namount of scatter\nopacity\npoint size\nsize of the output image\n\ne.g.\n\nscatterizer.scatter(\n    \"../data/cloud.png\",\n    n_samples=800,\n    var=0.3,\n    alpha=0.4,\n    width=4,\n)\n\n\n\n\n\n\n\n\ncolors = scatterizer.scatter(\n    \"../data/pytorch_logo.png\",\n    n_samples=1200,\n    var=0.3,\n    alpha=0.25\n)"
+  },
+  {
+    "objectID": "scatterizer.html",
+    "href": "scatterizer.html",
+    "title": "scatterizer",
+    "section": "",
+    "text": "source\n\nScatterizer\n\n Scatterizer ()\n\nConverts an input image to a scatterplot representation\n\nsource\n\n\nScatterizer.scatter\n\n Scatterizer.scatter (img_file:str, n_samples:int=1000, var:float=0.1,\n                      alpha:float=0.25, width:float=None, pointsz:int=25,\n                      savefig:bool=True)\n\nExecutes the full pipeline to create the output image\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nimg_file\nstr\n\nimage filepath\n\n\nn_samples\nint\n1000\nnumber of points to sample\n\n\nvar\nfloat\n0.1\namount of scatter (between 0 and 1 usually best)\n\n\nalpha\nfloat\n0.25\nopacity of each point (0 to 1)\n\n\nwidth\nfloat\nNone\ncan specify width (in) of output img, defaults to input img\n\n\npointsz\nint\n25\nsize of each point\n\n\nsavefig\nbool\nTrue\nwhether to save the output img"
+  }
+]
