@@ -13,6 +13,8 @@ pip install logo_dataizer
 
 ## How to use
 
+https://davegrays.github.io/logo-dataizer/
+
 initialize
 
 ``` python
@@ -23,7 +25,7 @@ scatterizer = Scatterizer()
 run scatter() on any image type, just giving the filepath
 
 ``` python
-scatterizer.scatter("/Users/davidg/Downloads/cloud.png")
+scatterizer.scatter("../data/cloud.png")
 ```
 
 ![](index_files/figure-commonmark/cell-3-output-1.png)
@@ -45,7 +47,7 @@ e.g.
 
 ``` python
 scatterizer.scatter(
-    "/Users/davidg/Downloads/cloud.png",
+    "../data/cloud.png",
     n_samples=800,
     var=0.3,
     alpha=0.4,
@@ -59,7 +61,7 @@ scatterizer.scatter(
 
 ``` python
 colors = scatterizer.scatter(
-    "/Users/davidg/Downloads/pytorch_logo.png",
+    "../data/pytorch_logo.png",
     n_samples=1200,
     var=0.3,
     alpha=0.25
